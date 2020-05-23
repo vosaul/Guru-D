@@ -263,6 +263,16 @@ section {
       line-height: 1.8;
       text-align: center;
       color: #3862b1;
+      .arrow {
+        font-size: 16px;
+      }
+      .rotate {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+      }
     }
   }
   .price_descr_popup {
@@ -560,7 +570,7 @@ section {
     background-image: linear-gradient(to bottom, #253b4e, #253b4e 120px, #fff 120px);
     padding-top: 120px;
   }
-  .messengers {
+  .messengers_top {
     display: none;
   }
   .why_grid {

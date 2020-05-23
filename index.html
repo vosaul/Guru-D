@@ -22,6 +22,7 @@ description: "Персональный ассистент – это незам�
 <section class="prices inner" id="prices">
   <h2>Тарифы</h2>
   <div class="price_grid">
+    {%- assign i = 0 -%}
     {%- for item in home.prices -%}
     <div class="plan">
       <h3 class="plan_title" style="background: {{item.color}};">{{item.plan}}</h3>
@@ -31,7 +32,27 @@ description: "Персональный ассистент – это незам�
         <li>{{prop.item}}</li>
         {%- endfor -%}
       </ul>
-      <div class="what_include" id="what_include" onclick="open_price_descr()">Что включено?</div>
+      <div class="what_include" onclick="price_descr({{i}})">Что включено? <span class="arrow">&#31;</span></div>
+{%- assign i = i | plus: 1 -%}
+  <!-- Popup price description window  -->
+  <div class="price_descr hidden">
+    <!-- <img class="close" id="price_descr_closer" src="/assets/images/close.svg" onclick="close_price_descr()"> -->
+  
+    <div class="price_descr_grid">
+        <ul class="plan_includs">
+          {%- for includ in item.includs -%}
+          <li>{{includ.item}}</li>
+          {%- endfor -%}
+        </ul>
+    </div>
+    <div class="contact_me">
+      <p>
+        Необходимо модифицировать входящие в пакет услуги?
+        <br><b>Напишите мне, обсудим :)</br>
+      </p>
+      {%- include messengers_top.html -%}
+    </div>
+</div>
     </div>
     {%- endfor -%}
   </div>
