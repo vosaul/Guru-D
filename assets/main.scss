@@ -276,13 +276,17 @@ section {
     }
   }
   .price_descr_popup {
-    background: white;
+    background: #ecf2f7;
     padding-top: 30px;
     padding-bottom: 30px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    h3 {
+      text-align: center;
+      font-size: 30px;
+    }
     .close {
       cursor: pointer;
     }
