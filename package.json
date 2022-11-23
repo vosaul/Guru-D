@@ -24,7 +24,7 @@
   "homepage": "https://github.com/vosaul/Guru-D#readme",
   "dependencies": {
     "autoprefixer": "^9.8.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-load-plugins": "^2.0.3",
