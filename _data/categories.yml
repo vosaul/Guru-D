@@ -1,8 +1,8 @@
-- category: Карьера ассистента
+- category: Кар'єра помічника
   slug    : career
-- category: Руководителям
+- category: Керівник
   slug    : boss
-- category: Полезные инструменты 
+- category: Корисні інструменти 
   slug    : tools
-- category: База документов
+- category: База документів
   slug    : docs

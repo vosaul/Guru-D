@@ -7,7 +7,7 @@ pagination:
 {%- include hero_blog.html -%}
 {%- include categories.html -%}
 <div class="pop_posts">
-<h2>Популярные статьи</h2>
+<h2>Популярні статті</h2>
 <div class="posts_grid inner">
   {%- for post in paginator.posts -%}
     <div class="post_card">
@@ -15,14 +15,16 @@ pagination:
       <a href="{{post.url | relative_url}}">
         <h3 class="card_title">{{post.title}}</h3>
       </a>
-      <p class="card_body">{{post.excerpt}}</p>
+      <p class="card_body">
+        {{ post.excerpt | strip_html | truncatewords:30 }}
+      </p>
     </div>
   {%- endfor -%}
 </div>
 <a href="/blog" class="read_all blog_btn">Показать еще</a>
 </div>
 <section class="tags_cloud inner">
-<h2>Поиск по тегам</h2>
+<h2>Пошук за тегами</h2>
   {%- include tagcloud.html -%}
 </section>
 <!-- Pagination links -->
@@ -34,7 +36,7 @@ pagination:
     </div>
     {% endif %}
     {% if paginator.previous_page %}
-    <div class="nav-next"><a href="{{ paginator.previous_page_path }}">Новые посты
+    <div class="nav-next"><a href="{{ paginator.previous_page_path }}">Нові дописи
         <span class="meta-nav">→</span></a></div>
     {% endif %}
 

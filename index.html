@@ -1,10 +1,10 @@
 ---
-layout     : home
-type       : main
-image      : '/assets/images/home-hero.jpg'
-title      : "Вам нужен персональный ассистент?"
-description: "Персональный ассистент – это незаменимый для руководителя сотрудник. Он выполняет настолько много функций
-и имеет такие большие полномочия, что по факту становится вторым человеком в компании."
+layout : home
+type : main
+image : '/assets/images/home-hero.jpg'
+title : "Вам потрібний персональний помічник?"
+description: |
+  Персональний помічник – це незамінний для керівника співробітник. Він виконує настільки багато функцій і має такі великі повноваження, що за фактом стає другою людиною в компанії.
 ---
 {%- assign home = site.data.home -%}
 {%- include hero.html -%}
@@ -20,7 +20,7 @@ description: "Персональный ассистент – это незам�
 </section>
 
 <section class="prices inner" id="prices">
-  <h2>Тарифы</h2>
+  <h2>Тарифи</h2>
   <div class="price_grid">
     {%- assign i = 0 -%}
     {%- for item in home.prices -%}
@@ -32,7 +32,7 @@ description: "Персональный ассистент – это незам�
         <li>{{prop.item}}</li>
         {%- endfor -%}
       </ul>
-      <div class="what_include" onclick="price_descr({{i}})">Что включено? <span class="arrow">&#31;</span></div>
+      <div class="what_include" onclick="price_descr({{i}})">Що включено? <span class="arrow">&#31;</span></div>
 {%- assign i = i | plus: 1 -%}
   <!-- Popup price description window  -->
   <div class="price_descr hidden">
@@ -47,9 +47,9 @@ description: "Персональный ассистент – это незам�
     </div>
     <div class="contact_me">
       <p>
-        Необходимо модифицировать входящие в пакет услуги?
-        <br><b>Напишите мне, обсудим :)</br>
-      </p>
+        Потрібно модифікувати послуги, що входять до пакету?
+        <br><b>Напишіть мені, обговоримо :)</br>
+        </p>
       {%- include messengers_top.html -%}
     </div>
 </div>
@@ -61,7 +61,7 @@ description: "Персональный ассистент – это незам�
   <div class="price_descr_popup hidden inner" id="price_descr">
 
     <img class="close" id="price_descr_closer" src="/assets/images/close.svg" onclick="close_price_descr()">
-    <h3>Что включено:</h3>
+    <h3>Що включено:</h3>
     <div class="price_descr_grid">
     {%- for item in home.prices -%}
     <div class="plan">
@@ -76,8 +76,8 @@ description: "Персональный ассистент – это незам�
     </div>
     <div class="contact_me">
       <p>
-        Необходимо модифицировать входящие в пакет услуги?
-        <br><b>Напишите мне, обсудим :)</br>
+        Потрібно модифікувати послуги, що входять до пакету?
+        <br><b>Напишіть мені, обговоримо :)</br>
       </p>
       {%- include messengers_top.html -%}
     </div>
@@ -106,7 +106,7 @@ description: "Персональный ассистент – это незам�
 
 <section class="contacts inner" id="contacts">
 
-  <h2>Контакты</h2>
+  <h2>Контакти</h2>
   <div class="contacts_grid">
     <div class="contact_item phone">
       <img src="/assets/images/phone.png" alt="">
@@ -123,14 +123,14 @@ description: "Персональный ассистент – это незам�
     </div>
   </div>
 
-  <h3>Обратная связь:</h3>
+  <h3>Зворотній зв'зок</h3>
   <form name="contact" method="POST" data-netlify="true" class="feedback">
-    <p class="hidden_small">Вы можете отправить мне сообщение прямо сейчас:</p>
+    <p class="hidden_small"> :</p>
     <div class="form_grid">
-      <textarea name="message" id="message" cols="30" rows="10" placeholder="Ваше сообщение..."></textarea>
-      <input type="text" name="name" id="name" placeholder="Ваше имя">
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Ваше повідомлення..."></textarea>
+      <input type="text" name="name" id="name" placeholder="Ваше ім'я">
       <input type="tel" name="tel" id="tel" placeholder="Ваш телефон">
-      <input type="submit" value="Отправить сообщение" class="submit_btn">
+      <input type="submit" value="Відправити повідомлення" class="submit_btn">
     </div>
   </form>
 </section>

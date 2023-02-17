@@ -1,15 +1,15 @@
 navigation: 
-  - title: Обо мне
+  - title: Про мене
     link : '/'
-  - title: Почему я?
+  - title: Чому я?
     link : '/#why_me' 
-  - title: Тарифы
+  - title: Тарифи
     link : '/#prices' 
-  - title: Гибкие условия
+  - title: Гнучкі умови
     link : '/#flexible_cond' 
-  - title: Прочие условия
+  - title: Інші умови
     link : '/#other_cond' 
-  - title: Контакты
+  - title: Контакти
     link : '/#contacts' 
   - title: Блог
     link : '/blog' 

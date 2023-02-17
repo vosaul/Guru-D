@@ -1,11 +1,11 @@
-title   : Блог персонального ассистента
-email   : rspersonal@gmail.com
-tel     : 8 495 256 21 21
-telegram: '@rspersonal'
+title   : Блог персонального помічника
+email   : passist@gmail.com
+tel     : +38 050 256 21 25
+telegram: '@passist'
 description: >- # this means to ignore newlines until "baseurl:"
-  Мой опыт включает в себя достаточно продолжительный 
-  период работы персональным ассистентом. 
-  Хочу рассказать вам об этой профессии.
+  Мій досвід включає досить тривалий
+  період роботи в якості персональної помічниці.
+  Я хочу розповісти вам про цю професію.
 language: ru
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
